@@ -27,6 +27,10 @@ namespace UserDetailsClient.iOS
             LoadApplication(new App());
             //App.PCA.RedirectUri = "vibro://sampledomain/sampleapp";
             App.PCA.RedirectUri = "msala7d8cef0-4145-49b2-a91d-95c54051fa3f://auth";
+
+            // To activate embedded webview, remove '//' below
+            //App.UIParent = new UIParent(true);
+
             return base.FinishedLaunching(app, options);            
         }
 
